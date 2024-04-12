@@ -16,11 +16,13 @@ public class ArrayListGradebook {
         do {
             newStudent = input.nextLine();
 
-            if (!newStudent.equals("")) {
+            if ("".equals(newStudent)) {
+                break;
+            }
+            else {
                 students.add(newStudent);
             }
-
-        } while(!newStudent.equals(""));
+        } while(true);
 
         // Get student grades
         for (String student : students) {
