@@ -1,8 +1,16 @@
 package org.launchcode;
 
-public class DVD {
-    // TODO: Implement your custom interface.
+public class DVD extends BasicDisk {
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    public DVD (String aName, int maxCapacity, String aType, int someUsedCapacity) {
+        super(aName, maxCapacity, aType, someUsedCapacity);
+    }
+
+    public void spinDisc() {
+        System.out.println("DVD is spinning up");
+    }
+
+    public void playMovie() {
+        System.out.println("Movie is playing");
+    }
 }

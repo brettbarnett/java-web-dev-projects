@@ -1,8 +1,12 @@
 package org.launchcode;
 
-public class CD {
-    // TODO: Implement your custom interface.
+public class CD extends BasicDisk {
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    public CD(String aName, int maxCapacity, String aType, int someUsedCapacity) {
+        super(aName, maxCapacity, aType,someUsedCapacity);
+    }
+
+    public void playMusic() {
+        System.out.println("Disk is spinning up");
+    }
 }

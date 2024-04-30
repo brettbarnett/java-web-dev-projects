@@ -2,9 +2,10 @@ package org.launchcode;
 
 public class Main {
     public static void main(String[] args) {
+        CD musicDisk = new CD("Korn", 700, "Music CD", 700);
+        musicDisk.playMusic();
 
-        // TODO: Declare and initialize a CD and a DVD object.
-
-        // TODO: Call each CD and DVD method to verify that they work as expected.
+        DVD movie = new DVD("The Matrix", 4500, "Movie DVD", 4500);
+        movie.playMovie();
     }
 }
